@@ -1,38 +1,70 @@
-.App {
+.container {
+  margin: auto;
+  width: 50%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-box {
+  width: 100;
+}
+.image-box input {
+  width: 70px;
+  height: 60px;
+  display: inline-block;
+  border: 1px solid rgb(62, 50, 50);
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  box-shadow: 0 0 2px black;
+}
+.image-box input:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px black;
+}
+#img-1 {
+  background-image: url(https://images.pexels.com/photos/3972755/pexels-photo-3972755.jpeg?cs=srgb&dl=pexels-garvin-st-villier-3972755.jpg&fm=jpg);
+  background-size: cover;
+}
+#img-2 {
+  background-image: url(https://www.autozworld.com/blog/wp-content/uploads/2018/04/1965-ford-mustang-coupe.jpg);
+  background-size: cover;
+}
+#img-3 {
+  background-image: url(https://www.autocar.co.uk/sites/autocar.co.uk/files/lamborghini-asterion5-sp-2014-.JPG);
+  background-size: cover;
+}
+#img-4 {
+  background-image: url(https://cars.usnews.com/images/article/202107/128581/15-21_Genesis_g70_Cropped.jpg);
+  background-size: cover;
+}
+#img-5 {
+  background-image: url(https://images.pexels.com/photos/3972755/pexels-photo-3972755.jpeg?cs=srgb&dl=pexels-garvin-st-villier-3972755.jpg&fm=jpg);
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-big{
+  width: 100%;
+  height: 600px;
+  margin-top: 10px;
+  border: 1px solid rgb(8, 36, 8);
+  box-shadow:0 0 5px black ;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#img-1:checked ~ .image-big{
+  background-image: url(https://images.pexels.com/photos/3972755/pexels-photo-3972755.jpeg?cs=srgb&dl=pexels-garvin-st-villier-3972755.jpg&fm=jpg);
+  background-size: cover;
 }
-
-.App-link {
-  color: #61dafb;
+#img-2:checked ~ .image-big{
+  background-image: url(https://www.autozworld.com/blog/wp-content/uploads/2018/04/1965-ford-mustang-coupe.jpg);
+  background-size: cover;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#img-3:checked ~ .image-big{
+  background-image: url(https://www.autocar.co.uk/sites/autocar.co.uk/files/lamborghini-asterion5-sp-2014-.JPG);
+  background-size: cover;
+}
+#img-4:checked ~ .image-big{
+  background-image: url(https://cars.usnews.com/images/article/202107/128581/15-21_Genesis_g70_Cropped.jpg);
+  background-size: cover;
+}
+#img-5:checked ~ .image-big{
+  background-image: url(https://images.pexels.com/photos/3972755/pexels-photo-3972755.jpeg?cs=srgb&dl=pexels-garvin-st-villier-3972755.jpg&fm=jpg);
+  background-size: cover;
 }
